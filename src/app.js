@@ -1,36 +1,21 @@
-/* eslint-disable */
-/*
-import "bootstrap";
-import "./style.css";
+var pronouns = ["the", "our"];
+var adjectives = ["great", "big"];
+var nouns = ["jogger", "racoon"];
+var extensions = ["com", "net", "us", "io"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-*/
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
-
-
-var pronoun = ["the", "our"];
-var adj = ["great", "big"];
-var noun = ["jogger", "racoon"];
-var ext = ["com", "es", "net", "eu"];
-
-var nombresDominios = [];
-
-for (var i = 0; i < pronoun.length; i++) {
-  for (var j = 0; j < adj.length; j++) {
-    for (var k = 0; k < noun.length; k++) {
-      for (var l = 0; l < ext.length; i++) {
-        let nombreDeDominio = pronoun[i] + adj[j] + noun[k] + "." + ext[l];
-        nombresDominios.push(nombreDeDominio);
+let domainNames = [];
+for (let i = 0; i < pronouns.length; i++) {
+  for (let j = 0; j < adjectives.length; j++) {
+    for (let k = 0; k < nouns.length; k++) {
+      for (let l = 0; l < nouns.length; l++) {
+        var domainName =
+          pronouns[i] + adjectives[j] + nouns[k] + "." + extensions[l];
+        domainNames.push(domainName);
       }
     }
   }
 }
-// recorra el nuevo array
-for (var m = 0; m < nombresDominios.length; m++) {
-  console.log(nombresDominios[l]);
+
+for (let m = 0; m < domainNames.length; m++) {
+  console.log(domainNames[m]);
 }

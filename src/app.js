@@ -1,21 +1,22 @@
-var pronouns = ["the", "our"];
-var adjectives = ["great", "big"];
-var nouns = ["jogger", "racoon"];
-var extensions = ["com", "net", "us", "io"];
+var pronoun = ["the", "our"];
+var adj = ["great", "big"];
+var noun = ["jogger", "racoon"];
+var ext = ["com", "es", "net", "eu"];
 
-let domainNames = [];
-for (let i = 0; i < pronouns.length; i++) {
-  for (let j = 0; j < adjectives.length; j++) {
-    for (let k = 0; k < nouns.length; k++) {
-      for (let l = 0; l < nouns.length; l++) {
-        var domainName =
-          pronouns[i] + adjectives[j] + nouns[k] + "." + extensions[l];
-        domainNames.push(domainName);
+let nombresDominios = [];
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let l = 0; l < ext.length; l++) {
+        var nombreDeDominio = 
+        pronoun[i] + adj[j] + noun[k] + "." + ext[l];
+        nombresDominios.push(nombreDeDominio);
       }
     }
   }
 }
-
-for (let m = 0; m < domainNames.length; m++) {
-  console.log(domainNames[m]);
+// recorra el nuevo array
+for (let m = 0; m < nombresDominios.length; m++) {
+  console.log(nombresDominios[m]);
 }
+
